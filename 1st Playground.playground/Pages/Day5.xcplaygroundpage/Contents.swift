@@ -47,7 +47,7 @@ if transport == .Taxi || transport == .Public {
 
 //it better to use an Switch case instead of if condition
 // it has a default case instead to cheak every posible condition
-// swift works debuging line by line 
+// swift works debuging line by line
 
 enum Weather{
     case rain ,sun , wind, snow ,unknow
@@ -75,4 +75,19 @@ case .unknow:
 }
 
 
+//---Ternary conditional
+// Usefull to avoid long code when comparing values
 
+//Comparing grades
+var MyGrade = 10
+print( MyGrade < 50 ? "you lose the Exam " : "you did it Great 🥳")
+
+//Knowing odd or even number
+var number = 1
+print( (number%2)==0 ? "Even number " : "Odd number" )
+
+//Comparing strings
+var String1 = "Hola"
+var String2 = "hola"
+
+print( String1.lowercased() == String2.lowercased() ? "String are the same  " : " Strings are diferent" )
