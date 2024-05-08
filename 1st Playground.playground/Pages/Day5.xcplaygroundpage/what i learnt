@@ -1,0 +1,30 @@
+Here I leartn:
+-___________________________________________
+if conditional 
+
+if () {
+
+}else if {
+
+}else{
+
+}
+--
+
+doble conditional with && and ||
+_________________________________________
+
+Switch case 
+
+switch (){
+
+default:
+  print()
+
+case 1:
+ print()
+
+case 2 :      
+ Print()
+
+}
