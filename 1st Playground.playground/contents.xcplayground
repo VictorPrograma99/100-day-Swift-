@@ -6,5 +6,6 @@
         <page name='Draft'/>
         <page name='Day7'/>
         <page name='CheckPoints'/>
+        <page name='Day8Closures'/>
     </pages>
 </playground>

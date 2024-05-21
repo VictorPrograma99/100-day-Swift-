@@ -20,8 +20,8 @@ func RaizCuadrada(_ Nu: Int) throws -> String {
         }
         if raiz == 0{
             throw errores.noroot
-        }else{
-            return "No se halló raiz cuadrada"}
+        }
+        return ""
     }
     
 }
