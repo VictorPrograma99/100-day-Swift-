@@ -12,11 +12,11 @@ if condicion {
  
 
 //-----------------you can mix conditionals using &&
-var temp = 20
+var temp = 400
 
 if temp < 30 && temp > 10{
     print("sera un dia tibio")
-}
+}else{print("sera un dia frio o caliente")}
 
 
 
@@ -91,3 +91,4 @@ var String1 = "Hola"
 var String2 = "hola"
 
 print( String1.lowercased() == String2.lowercased() ? "String are the same  " : " Strings are diferent" )
+
