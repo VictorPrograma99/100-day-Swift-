@@ -37,4 +37,33 @@ do{
 }
 
 
+//CHECKPOINT 5
 
+let LuckyNumbers = [7,4,38,21,16,15,12,33,31,49]
+
+//filter even numbers
+//sort the array in ascending order
+//map then in to string in
+// print the results of the array un item per line
+
+/*
+let filtered = LuckyNumbers.filter{ $0 % 2 != 0}
+print(filtered)
+
+let sorted = LuckyNumbers.sorted()
+print(sorted)
+
+let maped = LuckyNumbers.map({"\($0) is the lucky number"})
+
+for numbers in maped {
+    print(numbers)
+}
+*/
+
+//this is an easiest way
+
+let results=LuckyNumbers.filter{$0%2 != 0}
+    .sorted()
+    .map{"\($0)is the lucky number"}
+
+results.forEach{ print($0)}
