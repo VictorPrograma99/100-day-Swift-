@@ -67,3 +67,55 @@ let results=LuckyNumbers.filter{$0%2 != 0}
     .map{"\($0)is the lucky number"}
 
 results.forEach{ print($0)}
+
+
+
+
+
+//-____________________________________________________-
+//-____________________________________________________-
+//____________Checkpoint 6 _____________________________
+//-____________________________________________________-
+//-____________________________________________________-
+
+struct car {
+    
+    let model:String
+    let numberOfSeats:Int
+    private(set) var currentGear:Int
+    
+    init(model: String, numberOfSteats:Int ,currentGear:Int = 1){
+        self.model = model
+        self.numberOfSeats = numberOfSteats
+        self.currentGear = currentGear
+    }
+    
+    mutating func shiftUp(){
+        if currentGear < 10{
+            currentGear += 1
+            print("gear shifted up to \(currentGear)")
+        }else{
+            print("can't shift up ,actual current gear \(currentGear)")
+        }}
+    
+    mutating func shiftDown(){
+        if currentGear > 0 {
+            currentGear -= 1
+            print("gear shifted Down to \(currentGear)")
+        }else{
+            print("can't shift down ,actual current gear \(currentGear)")
+        }}
+    
+}
+
+var myCar = car(model: "Corolla", numberOfSteats: 5)
+myCar.shiftUp()
+myCar.shiftUp()
+myCar.shiftDown()
+
+
+print(myCar)
+
+for _ in 0...8{
+    myCar.shiftUp()
+}
