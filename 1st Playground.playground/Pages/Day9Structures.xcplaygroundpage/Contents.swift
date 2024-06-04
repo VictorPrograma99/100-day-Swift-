@@ -109,3 +109,19 @@ app.contacts.append("Adrian")
 app.contacts.append("Walle")
 app.contacts.append("Michael")
  
+//Also you can customa an initializer
+
+
+struct player {
+    var name :String
+    var number: Int
+    
+    
+    init( name: String){
+        self.name = name
+        self.number = Int.random(in: 1...10)
+    }
+}
+
+let Player = player(name: "juan")
+print(Player.self)

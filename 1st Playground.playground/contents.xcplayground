@@ -8,5 +8,6 @@
         <page name='CheckPoints'/>
         <page name='Day8Closures'/>
         <page name='Day9Structures'/>
+        <page name='exercisetopractice'/>
     </pages>
 </playground>
