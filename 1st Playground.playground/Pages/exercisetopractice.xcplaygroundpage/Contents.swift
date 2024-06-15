@@ -44,4 +44,44 @@ print(listaDeCompras.count)
 
 print(listaDeCompras)
  
+//____________________________________
+//crate clases inherit,super.init , override methods initializers
 
+//CHATGPT EXERCICE
+
+class Empleado{
+    
+    let nombre:String
+    let salario:Int
+    
+    init(nombre:String,salario:Int){
+        self.nombre=nombre
+        self.salario=salario
+    }
+    
+    func description(){
+        print("Nombre del empleado \(nombre), salario del empleado \(salario)")
+    }
+}
+
+class Gerente:Empleado{
+    let departamento:String
+    
+    init(nombre: String, salario: Int,departamento:String) {
+        self.departamento = departamento
+        super.init(nombre: nombre, salario: salario)
+        
+    }
+    override func description(){
+        print("Nombre del empleado \(nombre), salario del empleado \(salario), Departamento \(departamento)")
+    }
+}
+
+
+
+let carlos = Empleado(nombre: "Carlos Manuel", salario: 2000000)
+let andres = Gerente(nombre: "Andres German", salario: 1000000, departamento: "Testing")
+
+
+carlos.description()
+andres.description()

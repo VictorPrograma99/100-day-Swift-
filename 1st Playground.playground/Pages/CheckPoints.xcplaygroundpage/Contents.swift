@@ -65,9 +65,9 @@ for numbers in maped {
 let results=LuckyNumbers.filter{$0%2 != 0}
     .sorted()
     .map{"\($0)is the lucky number"}
-
+/*
 results.forEach{ print($0)}
-
+*/
 
 
 
@@ -107,7 +107,7 @@ struct car {
         }}
     
 }
-
+/*
 var myCar = car(model: "Corolla", numberOfSteats: 5)
 myCar.shiftUp()
 myCar.shiftUp()
@@ -119,3 +119,77 @@ print(myCar)
 for _ in 0...8{
     myCar.shiftUp()
 }
+*/
+
+
+//-____________________________________________________-
+//-____________________________________________________-
+//____________Checkpoint 7 _____________________________
+//-_______________CLASSES_____________________________-
+//-____________________________________________________-
+
+
+
+class Animal{
+    
+    let legs:Int
+    
+    init(legs:Int) {
+        self.legs=legs
+    }
+    
+}
+
+class Dog:Animal{
+    
+    func speak(){
+        print("Woow,Woow")
+    }
+    
+}
+
+class Corgi:Dog{
+    
+    override func speak() {
+        print("Bark,Bark,Bark")
+    }
+}
+
+class Poodle:Dog{
+    
+    override func speak() {
+        print("Poodle,Podle")
+    }
+}
+
+
+class Cat:Animal{
+    let isTame:Bool
+    
+    init(legs: Int,isTame:Bool) {
+        self.isTame=isTame
+        super.init(legs:legs)
+    }
+    func speak(){
+        print("MIAU")
+    }
+}
+
+class Persian:Cat{
+    override func speak(){
+        print("Persmiauuuu")
+    }
+}
+
+class Lion:Cat{
+    override func speak(){
+        print("Lioooomiauuuuuu")
+    }
+}
+
+
+let michi = Persian(legs: 4, isTame: true)
+michi.speak()
+
+let steven = Lion(legs: 4, isTame: false)
+steven.speak()
